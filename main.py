@@ -5,11 +5,14 @@ import os
 from datetime import datetime
 
 
+// here I fetching the images from the database
 path = 'images'
 images = []
 personNames = []
 myList = os.listdir(path)
 print(myList)
+
+// here i  storing all the names corresponding to each image
 for cu_img in myList:
     current_Img = cv2.imread(f'{path}/{cu_img}')
     images.append(current_Img)
